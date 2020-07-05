@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<header class="masthead" style="background-image: url('{{ url_for('static', filename='img/feature.png') }}')">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>Bookmarked.</h1>
+            <span class="subheading">The Universal Bookmark App</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <br>
+        <div class="col-lg-8 col-md-10 mx-auto"><img src="{{ url_for('static', filename='img/playstore.png') }}" alt="HTML5 Icon" width="384" height="128"/></div>
+        <br>
+        <p style="font-size: 50px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-weight: bold;">What can the app do for you?</p>
+        <br>
+        <ul>
+        <li>Bookmarked serves as a single destination to store all your interesting data.</li>
+        <br>
+        <li>Add links, photos and videos you like on Instagram, Facebook, Twitter, etc securely into your app acting as a shortcut and one stop location for all your important data. </li>
+        <br>
+        <li>Posts can be categorized into Entertainment, Research and Miscellaneous, and can be directly opened into respective apps or browsers upon click. You can always transfer posts from Miscellaneous to other categories. </li>
+        <br>
+        <li>You can sync all your data using an account, and retrieve it on other devices.</li>
+        <br>
+        <li>YouTube videos and social networking posts can be viewed directly within the app itself.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+{% endblock %}

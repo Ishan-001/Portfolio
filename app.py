@@ -19,6 +19,10 @@ class Contacts(db.Model):
 def home():
     return render_template('index.html')
 
+@app.route('/featured')
+def featured():
+    return render_template('featured.html')
+
 @app.route('/about')
 def about():
     return render_template('about.html')
