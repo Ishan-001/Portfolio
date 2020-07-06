@@ -1,0 +1,10 @@
+{
+    "params":
+    {
+        "local_server":"True",
+        "local_uri":"mysql://root:@localhost/ishan",
+        "prod_uri":"",
+        "gmail-user":"portfolio.ishan3@gmail.com",
+        "gmail-pass":"yourname3"
+    }
+}

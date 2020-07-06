@@ -1,11 +1,30 @@
 from flask import Flask, render_template, url_for, request
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
+from flask_mail import Mail, Message
+import json
 
+local_server=True
+with open('TechBlog\config.json', 'r') as c:
+    params=json.load(c)["params"]
+
+mail=Mail()
 app=Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:@localhost/ishan'
-db = SQLAlchemy(app)
+app.config.update(
+    MAIL_SERVER='smtp.gmail.com',
+    MAIL_PORT='465',
+    MAIL_USE_SSL=True,
+    MAIL_USERNAME=params["gmail-user"],
+    MAIL_PASSWORD=params["gmail-pass"]
+)
+mail.init_app(app)
 
+if local_server:
+    app.config['SQLALCHEMY_DATABASE_URI'] = params["local_uri"]
+else:
+    app.config['SQLALCHEMY_DATABASE_URI'] = params["prod_uri"]
+
+db = SQLAlchemy(app)
 class Contacts(db.Model):
     sno = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(80), nullable=False)
@@ -13,7 +32,6 @@ class Contacts(db.Model):
     phone = db.Column(db.String(120), nullable=False)
     message = db.Column(db.String(120), nullable=False)
     date = db.Column(db.String(120))
-
 
 @app.route('/')
 def home():
@@ -39,6 +57,8 @@ def contact():
         entry=Contacts(name=name, email=email, phone=phone, message=message, date=datetime.now())
         db.session.add(entry)
         db.session.commit()
+
+        mail.send_message('New message from Portfolio by '+name, sender=email, recipients=[params['gmail-user']], body=message+"\n"+phone)
     
     return render_template('contact.html')
 
