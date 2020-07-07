@@ -5,7 +5,7 @@ from flask_mail import Mail, Message
 import json
 
 local_server=True
-with open('TechBlog\config.json', 'r') as c:
+with open('TechBlog/config.json', 'r') as c:
     params=json.load(c)["params"]
 
 mail=Mail()
