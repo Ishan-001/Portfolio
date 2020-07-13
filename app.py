@@ -5,7 +5,7 @@ from flask_mail import Mail, Message
 import json
 
 local_server=True
-with open('TechBlog/config.json', 'r') as c:
+with open('./config.json', 'r') as c:
     params=json.load(c)["params"]
 
 mail=Mail()
@@ -66,5 +66,5 @@ def contact():
 def post():
     return render_template('post.html')
 
-app.run(debug=True)
- 
+if __name__=="__main__":
+    app.run(debug=True)
