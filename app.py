@@ -4,7 +4,7 @@ from datetime import datetime
 from flask_mail import Mail, Message
 import json
 
-local_server=True
+local_server=False
 with open('./config.json', 'r') as c:
     params=json.load(c)["params"]
 
