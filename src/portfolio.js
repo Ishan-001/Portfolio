@@ -207,14 +207,14 @@ const workExperiences = {
     },
     {
       role: "Android Developer",
-      company: "Health Byte",
-      companylogo: require("./assets/images/health.jpg"),
-      date: "September 2020 – Oct 2020",
-      desc: "Worked on the health byte app to detect sleep apnea in users using frequencies emitted by the user while sleeping",
+      company: "Lokal",
+      companylogo: require("./assets/images/lokal.PNG"),
+      date: "Aug 2022 – Dec 2022",
+      desc: "Worked on a hyperlocal social app with over 15 million downloads called Lokal. Lokal is a YC-S19 company with a total funding of more than $30M.",
       descBullets: [
-        "Made a background service to record sleep data using microphone",
-        "Sent sleep data packets to aws every 10 seconds",
-        "Visualise sleep data"
+        "Coordinate with the product and design team to come up with new features for the app.",
+        "Worked with Kotlin, Java, MVVM, Retrofit, Coroutines, Hilt, Firebase, Room, etc.",
+        "Worked with tools like Jira, Confluence, BitBucket, Slack, Trello, Mesh, etc."
       ]
     }
   ]
@@ -258,6 +258,12 @@ const bigProjects = {
           url: "https://play.google.com/store/apps/details?id=com.nearcast.app"
         }
       ]
+    },
+    {
+      image: require("./assets/images/health.jpg"),
+      projectName: "Health Byte",
+      projectDesc:
+        "Worked on a an app to detect sleep apnea from user's sleep data recorded using microphone and analysed on a background thread."
     }
   ],
   display: true // Set false to hide this section, defaults to true
