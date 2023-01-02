@@ -26,7 +26,7 @@ const greeting = {
     "A passionate Full Stack Android Developer 🚀 having an experience of building Mobile applications with Kotlin / Java / Nodejs and some other cool libraries and frameworks."
   ),
   resumeLink:
-    "https://www.linkedin.com/in/ishan-khandelwal-apk/overlay/1635493251469/single-media-viewer/", // Set to empty to hide the button
+    "https://drive.google.com/file/d/15w88-OP-AfJJeiESxEGLGgalzFq80J91/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
