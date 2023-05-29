@@ -216,6 +216,19 @@ const workExperiences = {
         "Worked with Kotlin, Java, MVVM, Retrofit, Coroutines, Hilt, Firebase, Room, etc.",
         "Worked with tools like Jira, Confluence, BitBucket, Slack, Trello, Mesh, etc."
       ]
+    },
+    {
+      role: "Android Developer",
+      company: "SuperShare",
+      companylogo: require("./assets/images/supershare.png"),
+      date: "Feb 2023 – present",
+      desc: "Worked on an app aiming to boost the creator economy and change the way people consume content on the internet.",
+      descBullets: [
+        "Worked on a 100% kotlin + compose codebase while following a multimodular CLEAN architecture",
+        "Wrote complex UI features and animations in Jetpack Compose",
+        "Worked extensively with Coroutines and Flows, along with Work Manager, Channels, etc.",
+        "Wrote 50+ unit tests using Mockk and Junit.",
+      ]
     }
   ]
 };
@@ -305,7 +318,7 @@ const achievementSection = {
     {
       title: "VIT Hack",
       subtitle: "Won the design track of the pretigious VIT Hack",
-      image: require("./assets/images/vithack.jpg"),
+      image: require("./assets/images/vithack.png"),
       footerLink: [
         {
           name: "View certificate",
@@ -364,17 +377,11 @@ const blogSection = {
   displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [
     {
-      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
+      url: "https://medium.com/techloop/10-tools-and-widgets-every-android-developer-should-know-about-1a98c089c54e",
+      title: "Essential Android libraries for beginners",
       description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
+        "10 libraries and tools every Android developer should know about"
     },
-    {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
-      description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
-    }
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -426,8 +433,8 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  number: "+91-7017497935",
+  email_address: "axil.ishan3@gmail.com"
 };
 
 // Twitter Section
