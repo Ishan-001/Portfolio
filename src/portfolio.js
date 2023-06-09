@@ -26,7 +26,7 @@ const greeting = {
     "A passionate Full Stack Android Developer 🚀 having an experience of building Mobile applications with Kotlin / Java / Nodejs and some other cool libraries and frameworks."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1J1L79I5vkUcpQMFuJ-hr9-_DjHNLSUeQ/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1R9CQyjWnjagjKAoMpDiR5mEq1dKHCFrD/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
