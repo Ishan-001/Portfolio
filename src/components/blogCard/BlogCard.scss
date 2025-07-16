@@ -10,7 +10,7 @@
   background-color: $lightBackground1;
   box-shadow: 0 0 36px $lightBoxShadow;
   cursor: pointer;
-  height: 200px;
+  height: 220px;
 }
 
 .blog-title {
@@ -18,7 +18,7 @@
   font-size: 1.375rem;
   line-height: 24px;
   font-weight: 700;
-  margin-left: 20px;
+  margin-left: 30px;
   margin-right: 20px;
   margin-bottom: 14px;
   margin-top: 32px;
@@ -33,7 +33,8 @@
   font-weight: 400;
   line-height: 1.5rem;
   color: $cardSubtitle;
-  padding: 0px 20px;
+  padding: 0px 30px;
+  margin-bottom: 20px;
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 4;

@@ -56,13 +56,13 @@ const socialMediaLinks = {
 const skillsSection = {
   title: "What I do",
   subTitle:
-    "CRAZY FULL STACK ANDROID DEVELOPER WHO WANTS TO EXPLORE EVERY TECH",
+    "Android Developer specialising in Jetpack Compose",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for mobile applications"
+      "⚡ Develop pixel perfect Front end / User Interfaces for mobile applications"
     ),
     emoji("⚡ Write efficient code using state of the art architectures"),
-    emoji("⚡ Integration of third party services and APIs")
+    emoji("⚡ Follow best coding practices and keep upskilling constantly")
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -76,6 +76,10 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "java",
       fontAwesomeClassname: "fab fa-java"
+    },
+    {
+      skillName: "kotlin",
+      fontAwesomeClassname: "fab fa-kotlin"
     },
     {
       skillName: "JavaScript",
@@ -158,15 +162,15 @@ const techStack = {
   experience: [
     {
       Stack: "Android", //Insert stack or technology you have experience in
-      progressPercentage: "80%" //Insert relative proficiency in percentage
+      progressPercentage: "85%" //Insert relative proficiency in percentage
     },
     {
       Stack: "Java",
-      progressPercentage: "70%"
+      progressPercentage: "80%"
     },
     {
       Stack: "Kotlin",
-      progressPercentage: "60%"
+      progressPercentage: "90%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -178,17 +182,41 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Travel Buddy",
-      companylogo: require("./assets/images/travelbuddy.png"),
-      date: "May 2021 – Sept 2021",
-      desc: "Worked on the flagship Travel Buddy Android app.",
+      role: "Android Developer",
+      company: "Radius",
+      companylogo: require("./assets/images/radius.png"),
+      date: "July 2023 – July 2025",
+      desc: "Worked on a CRM tool for brokerage teams in the US",
       descBullets: [
-        "Introduce new features",
-        "Implement amazing designs",
-        "Tested code for robustness",
-        "Restructured and improved coding pattterns",
-        "Developed a python script to send whatsapp messages to phone numbers in an excel sheet"
+        "Worked on a 100% kotlin + compose codebase while following a multimodular CLEAN architecture",
+        "Wrote complex UI features and animations in Jetpack Compose",
+        "Worked with multiple third party tools like Mixpanel for analytics, Twilio for in-app calling, OneSignal, Rocket Chat, etc.",
+        "Worked on our home-grown real estate AI agent - MEL",
+      ]
+    },
+    {
+      role: "Android Developer",
+      company: "SuperShare",
+      companylogo: require("./assets/images/supershare.png"),
+      date: "Feb 2023 – July 2023",
+      desc: "Worked on an app aiming to boost the creator economy and change the way people consume content on the internet.",
+      descBullets: [
+        "Worked on a 100% kotlin + compose codebase while following a multimodular CLEAN architecture",
+        "Wrote complex UI features and animations in Jetpack Compose",
+        "Worked extensively with Coroutines and Flows, along with Work Manager, Channels, etc.",
+        "Wrote 50+ unit tests using Mockk and Junit.",
+      ]
+    },
+    {
+      role: "Android Developer",
+      company: "Lokal",
+      companylogo: require("./assets/images/lokal.png"),
+      date: "Aug 2022 – Dec 2022",
+      desc: "Worked on a hyperlocal social app with over 15 million downloads called Lokal. Lokal is a YC-S19 company with a total funding of more than $30M.",
+      descBullets: [
+        "Coordinated with the product and design team to come up with new features for the app.",
+        "Worked with Kotlin, Java, MVVM, Retrofit, Coroutines, Hilt, Firebase, Room, etc.",
+        "Got first hand experience with tools like Jira, Confluence, BitBucket, Slack, Trello, Mesh, etc."
       ]
     },
     {
@@ -203,31 +231,6 @@ const workExperiences = {
         "Tested code for robustness",
         "Followed the CLEAN + MVVM pattern",
         "Worked with tools like Hilt, gRPC, Coroutines, etc."
-      ]
-    },
-    {
-      role: "Android Developer",
-      company: "Lokal",
-      companylogo: require("./assets/images/lokal.PNG"),
-      date: "Aug 2022 – Dec 2022",
-      desc: "Worked on a hyperlocal social app with over 15 million downloads called Lokal. Lokal is a YC-S19 company with a total funding of more than $30M.",
-      descBullets: [
-        "Coordinate with the product and design team to come up with new features for the app.",
-        "Worked with Kotlin, Java, MVVM, Retrofit, Coroutines, Hilt, Firebase, Room, etc.",
-        "Worked with tools like Jira, Confluence, BitBucket, Slack, Trello, Mesh, etc."
-      ]
-    },
-    {
-      role: "Android Developer",
-      company: "SuperShare",
-      companylogo: require("./assets/images/supershare.png"),
-      date: "Feb 2023 – present",
-      desc: "Worked on an app aiming to boost the creator economy and change the way people consume content on the internet.",
-      descBullets: [
-        "Worked on a 100% kotlin + compose codebase while following a multimodular CLEAN architecture",
-        "Wrote complex UI features and animations in Jetpack Compose",
-        "Worked extensively with Coroutines and Flows, along with Work Manager, Channels, etc.",
-        "Wrote 50+ unit tests using Mockk and Junit.",
       ]
     }
   ]
@@ -248,14 +251,14 @@ const bigProjects = {
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
-      image: require("./assets/images/kd.PNG"),
+      image: require("./assets/images/daikin.png"),
       projectName: "Khandelwal Distributors",
       projectDesc:
         "Made an admin, customer and technician side of our online servicing software to handle customer queries and product repair services.",
       footerLink: [
         {
-          name: "Go to app",
-          url: "https://play.google.com/store/apps/details?id=com.software.khandelwaldistributors"
+          name: "Visit website",
+          url: "https://www.khandelwaldistributors.com"
         }
         //  you can add extra buttons here.
       ]
@@ -267,8 +270,8 @@ const bigProjects = {
         "Worked on CameraX api and ffmpeg to make a photo/video editor for the Nearcast app",
       footerLink: [
         {
-          name: "Go to app",
-          url: "https://play.google.com/store/apps/details?id=com.nearcast.app"
+          name: "Visit website",
+          url: "https://www.nearcast.com/"
         }
       ]
     },
@@ -389,12 +392,17 @@ const blogSection = {
 // Talks Sections
 
 const talkSection = {
-  title: "Talks/Webinars",
+  title: "Talks/Podcasts",
   subtitle: emoji(
     "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
   ),
 
   talks: [
+      {
+      title: "My journey as an Android Dev",
+      subtitle: "Hosted by theCommute - Hitesh Kohli",
+      event_url: "https://www.youtube.com/watch?v=5MYH_0BlyYg"
+    },
     {
       title: "Introduction to Blockchain",
       subtitle: "A webinar on blockchain technology organised by IEEE-VIT",
@@ -432,16 +440,16 @@ const podcastSection = {
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
+    "Discuss am opportunity or just want to say hi? My Inbox is open for all.",
   number: "+91-7017497935",
-  email_address: "axil.ishan3@gmail.com"
+  email_address: "ishanx.career@gmail.com"
 };
 
 // Twitter Section
 
 const twitterDetails = {
   userName: "_ishawn_", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
 
 export {
