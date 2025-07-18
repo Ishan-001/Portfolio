@@ -23,7 +23,7 @@ const greeting = {
   username: "Ishan . apk",
   title: "Hi, I'm Ishan",
   subTitle: emoji(
-    "A passionate Full Stack Android Developer 🚀 having an experience of building Mobile applications with Kotlin / Java / Nodejs and some other cool libraries and frameworks."
+    "I'm a passionate and seasoned Android Developer with over 4 years of expertise in building and delivering high-quality, pixel-perfect apps using Jetpack Compose and modern Android architecture."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1R9CQyjWnjagjKAoMpDiR5mEq1dKHCFrD/view?usp=sharing", // Set to empty to hide the button
