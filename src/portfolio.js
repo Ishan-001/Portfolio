@@ -26,7 +26,7 @@ const greeting = {
     "I'm a passionate and seasoned Android Developer with over 4 years of expertise in building and delivering high-quality, pixel-perfect apps using Jetpack Compose and modern Android architecture."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1R9CQyjWnjagjKAoMpDiR5mEq1dKHCFrD/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1q-HSiGuKJ55IADk9ZBQfvIAuqDNf257g/view", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 

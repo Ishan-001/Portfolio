@@ -9,10 +9,10 @@ export default function Footer() {
     <Fade bottom duration={1000} distance="5px">
       <div className="footer-div">
         <p className={isDark ? "dark-mode footer-text" : "footer-text"}>
-          "Sometimes things don't go your way, but you get up and keep going"
+          "The only true wisdom is in knowing you know nothing."
         </p>
         <p className={isDark ? "dark-mode footer-text" : "footer-text"}>
-          - CM Punk
+          - Socrates
         </p>
       </div>
     </Fade>
